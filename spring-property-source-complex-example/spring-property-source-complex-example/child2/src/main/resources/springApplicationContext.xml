@@ -9,7 +9,7 @@
 
     <!--  initializes PropertySourcePlaceholder for usage of @Value -->
 	<!--  context:property-placeholder location="classpath:propertysourceplaceholder.properties" /-->
-	<context:component-scan base-package="org.example.spring.sourceproperty" />
+	<context:component-scan base-package="org.example.spring.sourceproperty.child2" />
 
 	<context:annotation-config />
 

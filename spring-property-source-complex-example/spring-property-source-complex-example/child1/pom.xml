@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.srccodes.example.spring</groupId>
-	<artifactId>SpringCoreHelloWorld1</artifactId>
+	<artifactId>SpringCoreHelloWorld-child1</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>SpringCoreHelloWorld1</name>
+	<name>SpringCoreHelloWorld-child1</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -33,6 +33,11 @@
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.srccodes.example.spring</groupId>
+			<artifactId>SpringCoreHelloWorld-child2</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>

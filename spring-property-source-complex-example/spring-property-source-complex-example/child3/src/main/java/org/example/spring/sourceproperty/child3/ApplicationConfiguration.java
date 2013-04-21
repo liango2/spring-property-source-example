@@ -1,4 +1,4 @@
-package org.example.spring.sourceproperty;
+package org.example.spring.sourceproperty.child3;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -16,15 +16,15 @@ public class ApplicationConfiguration {
 	@Autowired
 	private static Environment env;
 	
-	@Bean
-	public static PropertySourcesPlaceholderConfigurer properties(){
-	  PropertySourcesPlaceholderConfigurer pspc =
-	   new PropertySourcesPlaceholderConfigurer();
-	  Resource[] resources = new ClassPathResource[ ]
-	   { new ClassPathResource( "propertysourceplaceholder.properties" ) };
-	  pspc.setLocations( resources );
-	  pspc.setIgnoreUnresolvablePlaceholders( true );
-	  return pspc;	
-	}
+//	@Bean
+//	public static PropertySourcesPlaceholderConfigurer properties(){
+//	  PropertySourcesPlaceholderConfigurer pspc =
+//	   new PropertySourcesPlaceholderConfigurer();
+//	  Resource[] resources = new ClassPathResource[ ]
+//	   { new ClassPathResource( "propertysource.properties" ) };
+//	  pspc.setLocations( resources );
+//	  pspc.setIgnoreUnresolvablePlaceholders( true );
+//	  return pspc;	
+//	}
 	
 }
